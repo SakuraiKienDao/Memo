@@ -19,6 +19,7 @@ body{
   background-blend-mode: soft-light;
   background-image: url(../img/backimg.JPG);
   background: cover;
+  background-size: cover;
 }
 
 header, main, footer, h1, h2, h3, p, div, table, .field, .btn-area, .filler01 {
@@ -86,33 +87,37 @@ textarea{
   margin-left:3em;
   text-align: left;
 }
-#save, #select, #del{
+.btn{
   padding: 0.5em;
-  border-radius: 0.3em;
-  color: whitesmoke;
+  border-radius: 0.4em;
+  border: 2px solid #555;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 1px, rgba(6, 24, 44, 0.65) 0px 4px 6px -2px, rgba(255, 255, 255, 0.08) 0px 0px 0px inset;
+  color: #555;
   font-size: 1em;
-  background: rgb(26, 212, 212);
+  background: #E1FFDE;
   cursor: pointer; /*カーソルをポインターの形（かたち）にする*/
 }
+
+
 table{
   table-layout: fixed;
   width: 80%;
   margin-left: 3em;
   border-collapse: collapse;
-  opacity: 0.9;
+  opacity: 0.67;
 }
 table th{
-  background: #888;
+  background: #555;
 }
 
 table th, table td{
   padding: 0.5em 0;
-  border: solid 0.1em #fff;
+  border: solid 0.1px #fff;
   color: white;
   text-align: center;
 }
 table tr{
-  background: #46aef7;
+  background: #17A589 ;
 }
 .width10{
   width: 10%;
@@ -123,6 +128,8 @@ table tr{
 .width60{
   width: 60%;
 }
+
+
 
 
 
