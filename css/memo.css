@@ -41,6 +41,9 @@ h2 {
     color: whitesmoke;
     font-weight: 1000;
 }
+header{
+  font-family: 'Kaisei Tokumin', serif;
+}
 
 /*******************************************************/
 /* メイン                                              */
@@ -78,6 +81,7 @@ textarea{
   position: absolute;
   top: 2em;
   left: 3em;
+  font-family: 'Zen Kurenaido', sans-serif;
 }
 
 /* ★自分でコーディングする！(code by yourself)...  疑似要素「::placeholder」を使って、textareaの文字の色を定義する。*/
@@ -96,7 +100,10 @@ textarea{
   font-size: 1em;
   background: #E1FFDE;
   cursor: pointer; /*カーソルをポインターの形（かたち）にする*/
+  transition: all ease-in-out 0.7s;
 }
+
+
 
 
 table{
@@ -155,6 +162,9 @@ table tr{
   /* ボタン */
   .btn-area{
     margin-left:0.1em;
+  }
+  .btn{
+    padding: 0.4em;
   }
   
   table{
