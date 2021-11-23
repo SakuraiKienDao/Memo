@@ -6,6 +6,7 @@ html {
   }
 
 body{
+  height: 100vh;
   line-height: 1.5;
   font-size: 1.6rem; /* 16px */
   font-family: "Helvetica Neue",
@@ -18,13 +19,13 @@ body{
   background-color:rgba(233, 168, 227, 0.6);
   background-blend-mode: soft-light;
   background-image: url(../img/backimg.JPG);
-  background: cover;
-  background-size: cover;
+  background-image: cover;
+  
 }
 
 header, main, footer, h1, h2, h3, p, div, table, .field, .btn-area, .filler01 {
-    margin: 0.5em 0em 0em 0em;
-    padding: 0.1em;
+    margin: 0.2em 0em 0em 0em;
+    padding: 0em;
 }
 th, td {
     line-height: 1.2em;
@@ -49,14 +50,37 @@ header{
 /* メイン                                              */
 /*******************************************************/
 /* KEY 入力エリア */
+.textfiel{
+  position: relative;
+  left: 70px;
+  height: 290px;
+  background-color: rgba(99, 205, 218,0.5);
+  width: 500px;
+  border-radius: 10px;
+}
+.txkey{
+  position: absolute;
+  left: -30px;
+  top: 24px;
+  height: 40px;
+  width: 30px;
+  background-color: aquamarine;
+  border-radius: 25px 0 0px 020px;
+}
+
+
 .field01 {
   position: relative;
   height: 5em;
+
+  
 }
 /* MEMO 入力エリア */
 .field02 {
   position: relative;
   height: 10em;
+  
+
 }
 /* ラベル */
 label {
@@ -80,8 +104,12 @@ lable::after{
 textarea{
   position: absolute;
   top: 2em;
-  left: 3em;
+  left: 0;
   font-family: 'Zen Kurenaido', sans-serif;
+}
+
+#textKey, #textMemo{
+  border-left: none;
 }
 
 /* ★自分でコーディングする！(code by yourself)...  疑似要素「::placeholder」を使って、textareaの文字の色を定義する。*/
